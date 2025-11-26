@@ -1,0 +1,25 @@
+{
+  "monitoring": {
+    "service_name": "{{ service_name }}",
+    "env": "{{ env }}",
+    "metrics": {
+      "enabled": {{ metrics_enabled | default('true') | lower }},
+      "collection_interval": "{{ collection_interval | default('60s') }}",
+      "retention_days": {{ retention_days | default(30) }}
+    },
+    "alerts": {
+      "enabled": {{ alerts_enabled | default('true') | lower }},
+      "notification_channels": {{ notification_channels | default('[]') | tojson }},
+      "thresholds": {
+        "cpu_percent": {{ cpu_threshold | default(80) }},
+        "memory_percent": {{ memory_threshold | default(85) }},
+        "response_time_ms": {{ response_time_threshold | default(1000) }}
+      }
+    },
+    "health_check": {
+      "endpoint": "{{ health_endpoint | default('/health') }}",
+      "timeout": "{{ health_timeout | default('5s') }}",
+      "expected_status": {{ expected_status | default(200) }}
+    }
+  }
+}
