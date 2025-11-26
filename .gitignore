@@ -1,3 +1,4 @@
 .kiro
 main.pdf
 venv
+__pycache__
