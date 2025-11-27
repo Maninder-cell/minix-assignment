@@ -1,0 +1,14 @@
+{
+  "service": {
+    "name": "api",
+    "version": "3.2.0",
+    "env": "prod",
+    "port": 8443,
+    "max_memory": "4G",
+    "healthcheck": {
+      "endpoint": "/api/v1/health",
+      "interval": "10s",
+      "timeout": "5s"
+    }
+  }
+}

@@ -1,5 +1,49 @@
-.kiro
-main.pdf
-venv
-__pycache__
+# Kiro IDE
+.kiro/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
 service_manager.log
+*.log
+
+# Test outputs
+test_output_*/
+metrics/
+reports/
+
+# Generated configurations (keep templates and examples)
+service_manager/configs/dev/*_generated.json
+service_manager/configs/dev/quickstart_*.json
+service_manager/configs/prod/*_generated.json
+service_manager/configs/prod/quickstart_*.json
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Documentation artifacts
+main.pdf
+
+# Temporary files
+*.tmp
+*.bak
+.cache/

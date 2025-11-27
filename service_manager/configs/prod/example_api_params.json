@@ -1,0 +1,9 @@
+{
+  "service_name": "api",
+  "version": "3.2.0",
+  "port": 8443,
+  "max_memory": "4G",
+  "healthcheck_endpoint": "/api/v1/health",
+  "healthcheck_interval": "10s",
+  "healthcheck_timeout": "5s"
+}

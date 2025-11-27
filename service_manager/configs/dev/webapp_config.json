@@ -1,0 +1,14 @@
+{
+  "service": {
+    "name": "webapp",
+    "version": "1.0.0",
+    "env": "dev",
+    "port": 3000,
+    "max_memory": "512M",
+    "healthcheck": {
+      "endpoint": "/health",
+      "interval": "30s",
+      "timeout": "5s"
+    }
+  }
+}

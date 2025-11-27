@@ -1,0 +1,14 @@
+{
+  "service_name": "webapp",
+  "metrics_enabled": true,
+  "collection_interval": "60s",
+  "retention_days": 7,
+  "alerts_enabled": true,
+  "notification_channels": ["email", "slack"],
+  "cpu_threshold": 75,
+  "memory_threshold": 80,
+  "response_time_threshold": 2000,
+  "health_endpoint": "/health",
+  "health_timeout": "5s",
+  "expected_status": 200
+}

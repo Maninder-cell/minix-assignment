@@ -1,0 +1,14 @@
+{
+  "service_name": "api",
+  "metrics_enabled": true,
+  "collection_interval": "30s",
+  "retention_days": 30,
+  "alerts_enabled": true,
+  "notification_channels": ["pagerduty", "slack", "email"],
+  "cpu_threshold": 80,
+  "memory_threshold": 85,
+  "response_time_threshold": 1000,
+  "health_endpoint": "/api/v1/health",
+  "health_timeout": "3s",
+  "expected_status": 200
+}

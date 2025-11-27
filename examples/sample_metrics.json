@@ -1,0 +1,11 @@
+{
+  "host": "dev-server.example.com",
+  "service_name": "webapp",
+  "status": "running",
+  "uptime": "2h 15m",
+  "health_check": true,
+  "health_endpoint": "http://dev-server.example.com:3000/health",
+  "response_time_ms": 45.23,
+  "timestamp": "2025-11-27T10:30:00.000000",
+  "errors": []
+}
