@@ -15,31 +15,6 @@ from service_manager.src.utils.ssh import SSHConnectionManager
 logger = logging.getLogger(__name__)
 
 
-class ServiceManagerError(Exception):
-    """Base exception for all service manager errors."""
-    pass
-
-
-class RemoteExecutionError(ServiceManagerError):
-    """Exception raised when remote command execution fails."""
-    pass
-
-
-class ConnectionError(RemoteExecutionError):
-    """Exception raised when SSH connection fails."""
-    pass
-
-
-class TimeoutError(RemoteExecutionError):
-    """Exception raised when operation times out."""
-    pass
-
-
-class ServiceOperationError(ServiceManagerError):
-    """Exception raised when service operation fails."""
-    pass
-
-
 class ServiceController:
     """Controls service lifecycle operations on remote hosts.
     

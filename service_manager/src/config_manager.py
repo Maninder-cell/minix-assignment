@@ -19,23 +19,13 @@ from service_manager.src.utils.validators import validate_config_schema
 logger = logging.getLogger(__name__)
 
 
-class ConfigurationError(Exception):
-    """Base exception for configuration-related errors."""
-    pass
-
-
-class TemplateNotFoundError(ConfigurationError):
+class TemplateNotFoundError(Exception):
     """Exception raised when a template file is not found."""
     pass
 
 
-class TemplateRenderError(ConfigurationError):
+class TemplateRenderError(Exception):
     """Exception raised when template rendering fails."""
-    pass
-
-
-class ValidationError(ConfigurationError):
-    """Exception raised when configuration validation fails."""
     pass
 
 

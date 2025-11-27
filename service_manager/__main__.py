@@ -13,8 +13,7 @@ import click
 from service_manager.src.config_manager import (
     ConfigurationManager,
     TemplateNotFoundError,
-    TemplateRenderError,
-    ValidationError
+    TemplateRenderError
 )
 from service_manager.src.service_controller import ServiceController
 from service_manager.src.monitoring import MonitoringSystem
