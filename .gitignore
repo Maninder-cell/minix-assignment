@@ -1,6 +1,3 @@
-# Kiro IDE
-.kiro/
-
 # Python
 venv/
 __pycache__/
@@ -39,9 +36,6 @@ service_manager/configs/prod/quickstart_*.json
 *.swo
 *~
 .DS_Store
-
-# Documentation artifacts
-main.pdf
 
 # Temporary files
 *.tmp
