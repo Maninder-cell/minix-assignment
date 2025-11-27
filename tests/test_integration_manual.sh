@@ -9,6 +9,22 @@ echo "Service Fleet Manager - Integration Test"
 echo "=============================================="
 echo ""
 
+# Detect if we're running from tests/ directory or project root
+if [ -f "service_manager/__main__.py" ]; then
+    # Running from project root
+    PROJECT_ROOT="."
+elif [ -f "../service_manager/__main__.py" ]; then
+    # Running from tests/ directory
+    PROJECT_ROOT=".."
+    cd "$PROJECT_ROOT"
+else
+    echo "Error: Cannot find project root. Please run from project root or tests/ directory."
+    exit 1
+fi
+
+echo "Running from: $(pwd)"
+echo ""
+
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 TEST_DIR="test_output_${TIMESTAMP}"
 mkdir -p "$TEST_DIR"
